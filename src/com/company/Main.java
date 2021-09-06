@@ -31,10 +31,48 @@ public class Main {
 //		double c = Math.pow (b, a);
 //		System.out.println(c);
 
-		// #4
-		
+          // #4
+//        boolean value = false;
+//        int  n = 0;
+//        int d = 47;
+//
+//        while (value == false)
+//        {
+//            if ((n*n*n + 91) % d == 0)
+//                value = true;
+//
+//                else
+//                n = n + 1;
+//        }
+//        System.out.println(n);
 
+        //#5
+        int t = 0;
+        int bt1;
+        int bt2;
+        int bdm = 0;
+        int btm = 0;
 
+        while (t < 100)
+        {
+            bt1 = t * (t - 20) * (t - 100) + 120000;
+            bt2 = (t+1)*((t+1)-20)*((t+1)-100)+120000;
+            if (t==0)
+            {
+                bdm = bt2 - bt1;
+                btm = t +1;
+            }
+            else
+            {
+                if (bt2 - bt1 < bdm)
+                {
+                    bdm = bt2 - bt1;
+                    btm = t + 1;
+                }
+            }
+            t = t + 1;
+        }
+        System.out.println(btm);
 
     }
 }
